@@ -2,7 +2,7 @@
     max-width: 300px;
     margin: 0 auto;
     text-align: center;
-    border: 1px solid #ccc;
+    border: 1px solid black;
     border-radius: 5px;
     padding: 10px;
 }
@@ -20,14 +20,14 @@ button {
 }
 
 .number {
-    background-color: #f0f0f0;
+    background-color: #FFDAE5;
 }
 
 .operator {
-    background-color: #ff9900;
+    background-color: #F1A3AD;
     color: white;
 }
 
 button:hover {
-    background-color: #ccc;
+    background-color: #FFF7FF;
 }
