@@ -28,3 +28,30 @@ document.getElementById("clear").addEventListener("click", function () {
     memory = 0;
     display.textContent = "0";
 });
+
+function calculate() {
+    if (currentInput !== "") {
+        var currentValue = parseFloat(currentInput);
+        switch (currentOperator) {
+            case "+":
+                memory += currentValue;
+                break;
+            case "-":
+                memory -= currentValue;
+                break;
+            case "x":
+                memory *= currentValue;
+                break;
+            case "/":
+                if (currentValue !== 0) {
+                    memory /= currentValue;
+                } else {
+                    alert("Division par zéro !");
+                }
+                break;
+        }
+        display.textContent = memory;
+        currentInput = "";
+        currentOperator = "";
+    }
+}
